@@ -4,94 +4,47 @@
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="./images/favicon.ico">
-	<title>WeatherApp</title>
+	<title>Training</title>
 	<!-- CSS -->
 	<link rel="stylesheet" href="./css/custom.css">
 </head>
 <body>
-	<h1>WeatherApp</h1>
+	<div id="my_container">
+		<div>
+			<div>〇〇してくれるメーカー</div>
+			
+			
+		</div>
 
-<div class="tennkiyohou">
-	<h1>岐阜県</h1>
-<div id="gifu">
-	<!-- 美濃地方 -->
-	<div class="mino">
-		<h1 id="basho1"></h1>
-		<!-- ここに画像を入れる -->
-		<ul>
-			<li id="mino_saikou"></li>
-			<li id="mino_saitei"></li>
-		</ul>
-		<p></p>
+		<form><input type="button" value="褒めてくれる" onClick="homeru()"></form>
+
+<script type="text/javascript">
+function homeru() {
+	rand = Math.floor(Math.random()*5);
+	if (rand == 0) msg = "「よく頑張った。この調子で次も頑張ろうな。」";
+	if (rand == 1) msg = "「たくさん頑張ったのね。よしよしっ、次も頑張ろうねっ♪」";
+	if (rand == 2) msg = "「まっ、あんたにしては上出来じゃない？...期待してるわよ」";
+	if (rand == 3) msg = "「頑張ったねっ、君が頑張っていること、知ってるからね♪」";
+	if (rand == 4) msg = "「いいじゃないか、君の努力が身を結んだな。」";
+	alert(msg);
+}
+</script>
+
+<form><input type="button" value="応援してくれる" onClick="ouen()"></form>
+	
+<script type="text/javascript">
+	function ouen() {
+		rand2 = Math.floor(Math.random()*5);
+		if (rand2 == 0) msg = "「まだまだやれるさ、頑張れよ！」";
+		if (rand2 == 1) msg = "「頑張ったらよしよししてあげるからね♪頑張ってっ♪」";
+		if (rand2 == 2) msg = "「ここで根をあげるの？こっから頑張りなさいよ！」";
+		if (rand2 == 3) msg = "「君が頑張るところ、見てるからねっ♪頑張ってっ♪」";
+		if (rand2 == 4) msg = "「君のその頑張りが未来に繋がる、頑張れよ。」";
+		alert(msg);
+	}
+	</script>
 	</div>
-
-	<!-- 飛騨地方 -->
-	<div class="hida">
-		<h1 id="basho2"></h1>
-		<!-- ここに画像を入れる -->
-		<ul>
-			<li id="hida_saikou"></li>
-			<li id="hida_saitei"></li>
-		</ul>
-		<p></p>
-	</div>
-</div>
-
-<div id="aiti">
-	<h1>愛知県</h1>
-<!-- 西部 -->
-<div class="seibu">
-
-	<h1 id="basho3"></h1>
-	<!-- ここに画像を入れる -->
-	<ul>
-		<li id="seibu_saikou"></li>
-		<li id="seibu_saitei"></li>
-	</ul>
-	<p></p>
-</div>
-
-<div class="toubu">
-
-	<h1 id="basho4"></h1>
-	<!-- ここに画像を入れる -->
-	<ul>
-		<li id="toubu_saikou"></li>
-		<li id="toubu_saitei"></li>
-	</ul>
-	<p></p>
-</div>
-
-<h1>三重県</h1>
-<div id="mie">
-	<!-- 北中部 -->
-	<div class="hokutyuubu">
-		<h1 id="basho5"></h1>
-		<!-- ここに画像を入れる -->
-		<ul>
-			<li id="hokutyuubu_saikou"></li>
-			<li id="hokutyuubu_saitei"></li>
-		</ul>
-		<p></p>
-	</div>
-
-	<!-- 南部 -->
-	<div class="nanbu">
-		<h1 id="basho6"></h1>
-		<!-- ここに画像を入れる -->
-		<ul>
-			<li id="nanbu_saikou"></li>
-			<li id="nanbu_saitei"></li>
-		</ul>
-		<p></p>
-	</div>
-</div>
-
-</div>
-
-</div>
 	<!-- JavaScript -->
-	<script src="//cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js"></script>
 	<script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
 	<script src="./main.js"></script>
 </body>
