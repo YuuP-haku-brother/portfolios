@@ -4,48 +4,86 @@
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="./images/favicon.ico">
-	<title>Training</title>
+	<title>PiyoStarter</title>
 	<!-- CSS -->
+	<link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="./libs/bootstrap/carousel.css">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="./css/custom.css">
 </head>
 <body>
-	<div id="my_container">
-		<div>
-			<div>〇〇してくれるメーカー</div>
-			
-			
+	
+	<!-- Header(Start) -->
+	<header>
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img src="./images/logo.png">PiyoStarter
+				</a>
+			</div>
+		</nav>
+	</header>
+	<!-- Header(End) -->
+
+	<!-- Main(Start) -->
+	<main>
+		<div class="container mt-5 pb-5">	
+				<h1>BOOTSTRAPを始めよう!!!</h1>
+				<p>世界で一番人気のあるフロントエンドライブラリーBootstrapで、モバイルファーストなレスポンシブウェブを素早くデザイン・カスタマイズできます
+					レスポンシブグリッドシステム、豊富なコンポネート、強力なJabaScriptプラグインを備えています
+				</p>
+				<button class="btn btn-primary btn-lg">公式サイト</button>
+		</div>
+		<div class="container mt-5">
+			<div class="row">
+				<div class="col">
+                    <h1>Layout</h1>
+					<p>Bootstrapには強力なレイアウトシステムが存在します
+						先ずはコンテナとグリッドシステムについて理解しましょう。
+					</p>
+					<ul class="list-unstyled">
+						<li>・<a href="#">Containers</a> </li>
+						<li>・Grid(comming soon!!)</li>
+					</ul>
+
+				</div>
+				<div class="col">
+					<h1>Components</h1>
+					<p>Bootstrapには様々なコンポネートが備わっています。
+						必要に応じて使いこなしましょう。
+					</p>
+					<ul class="list-unstyled">
+						<li>・<a href="#">Button guide</a> </li>
+						<li>・<a href="#">Alerts guide</a> </li>
+						<li>・<a href="#">Card guide</a> </li>
+						<li>・<a href="#">Collapse guide</a> </li>
+						<li>・<a href="#">Accordion guide</a> </li>
+						<li>・etc...(comming soon!!)</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 
-		<form><input type="button" value="褒めてくれる" onClick="homeru()"></form>
+	</main>
+	<!-- Main(End) -->
 
-<script type="text/javascript">
-function homeru() {
-	rand = Math.floor(Math.random()*5);
-	if (rand == 0) msg = "「よく頑張った。この調子で次も頑張ろうな。」";
-	if (rand == 1) msg = "「たくさん頑張ったのね。よしよしっ、次も頑張ろうねっ♪」";
-	if (rand == 2) msg = "「まっ、あんたにしては上出来じゃない？...期待してるわよ」";
-	if (rand == 3) msg = "「頑張ったねっ、君が頑張っていること、知ってるからね♪」";
-	if (rand == 4) msg = "「いいじゃないか、君の努力が身を結んだな。」";
-	alert(msg);
-}
-</script>
+	<!-- Footer(Start) -->
+	<footer>
+		<div class="container text-muted py-5 border-0">
+			<p class="float-end mb-1"><a href="#">Back to top</a></p>
+			<p class="mb-1">&copy; Bootstrap</p>
+			<p class="mb-0">
+				<a href="https://getbootstrap.jp" target="_blank">Bootstap公式サイト</a>や
+				<a href="https://getbootstrap.jp/docs/5.0/getting-started/introduction/" target="_blank">スタートガイド</a>、
+				<a href="https://icons.getbootstrap.com/" target="_blank">アイコン</a>を活用しましょう。
+			</p>
+		</div>
+	</footer>
+	<!-- Footer(End) -->
 
-<form><input type="button" value="応援してくれる" onClick="ouen()"></form>
-	
-<script type="text/javascript">
-	function ouen() {
-		rand2 = Math.floor(Math.random()*5);
-		if (rand2 == 0) msg = "「まだまだやれるさ、頑張れよ！」";
-		if (rand2 == 1) msg = "「頑張ったらよしよししてあげるからね♪頑張ってっ♪」";
-		if (rand2 == 2) msg = "「ここで根をあげるの？こっから頑張りなさいよ！」";
-		if (rand2 == 3) msg = "「君が頑張るところ、見てるからねっ♪頑張ってっ♪」";
-		if (rand2 == 4) msg = "「君のその頑張りが未来に繋がる、頑張れよ。」";
-		alert(msg);
-	}
-	</script>
-	</div>
 	<!-- JavaScript -->
-	<script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
+	<script src="./libs/jquery/jquery-3.6.1.min.js"></script>
+	<script src="./libs/bootstrap/bootstrap.min.js"></script>
 	<script src="./main.js"></script>
 </body>
 </html>
