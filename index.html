@@ -4,7 +4,7 @@
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="./images/favicon.ico">
-	<title>PiyoStarter</title>
+	<title>PiyoAlbum</title>
 	<!-- CSS -->
 	<link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./libs/bootstrap/carousel.css">
@@ -18,7 +18,7 @@
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">
-					<img src="./images/logo.png">PiyoStarter
+					<img src="./images/logo.png">PiyoAlbum
 				</a>
 			</div>
 		</nav>
@@ -27,49 +27,111 @@
 
 	<!-- Main(Start) -->
 	<main>
-		<div class="container mt-5 pb-5">	
-				<h1>BOOTSTRAPを始めよう!!!</h1>
-				<p>世界で一番人気のあるフロントエンドライブラリーBootstrapで、モバイルファーストなレスポンシブウェブを素早くデザイン・カスタマイズできます
-					レスポンシブグリッドシステム、豊富なコンポネート、強力なJabaScriptプラグインを備えています
+	<div class="container">	
+		<div class="card text-center">
+			<div class="card-body">
+				<h4 class="card-title">Portfolios</h4>
+				<p class="card-text">ポートフォリオサイトは自身が作った作品をまとめたwebサイトのことで、
+				新しいクライアントに対してスキルや実績をアピールすることを目的としています。
 				</p>
-				<button class="btn btn-primary btn-lg">公式サイト</button>
+				<a href="#" class="btn btn-primary">Main call to action</a>
+				<a href="#" class="btn btn-secondary">Secondary action</a>
+			</div>
 		</div>
-		<div class="container mt-5">
-			<div class="row">
-				<div class="col">
-                    <h1>Layout</h1>
-					<p>Bootstrapには強力なレイアウトシステムが存在します
-						先ずはコンテナとグリッドシステムについて理解しましょう。
-					</p>
-					<ul class="list-unstyled">
-						<li>・<a href="#">Containers</a> </li>
-						<li>・Grid(comming soon!!)</li>
-					</ul>
+	</div>	
 
+	<div class="container-fluid bg-light">
+		<div class="row"><!--HTML,CSS,JS-->
+			<div class="col-sm-4">
+				<div class="card" style="max-width:25rem;">
+					<img class="card-img-top" src="./images/logo_html.png">
+					<div class="card-body">
+						<p class="card-text">
+							HyperText Markup Language(ハイパーテキストマークアップランゲージ)は
+							ハイパーテキストを記述するための言語の一つで、主にWorld Wide Web(WWW)において
+							Webページを表現するために用いられます
+						</p>
+						<a href="#" class="btn btn-primary">Demo</a>
+					</div>
 				</div>
-				<div class="col">
-					<h1>Components</h1>
-					<p>Bootstrapには様々なコンポネートが備わっています。
-						必要に応じて使いこなしましょう。
-					</p>
-					<ul class="list-unstyled">
-						<li>・<a href="#">Button guide</a> </li>
-						<li>・<a href="#">Alerts guide</a> </li>
-						<li>・<a href="#">Card guide</a> </li>
-						<li>・<a href="#">Collapse guide</a> </li>
-						<li>・<a href="#">Accordion guide</a> </li>
-						<li>・etc...(comming soon!!)</li>
-					</ul>
+			</div>
+			<div class="col-sm-4">
+				<div class="card" style="max-width:25rem;">
+					<img class="card-img-top" src="./images/logo_css.png">
+					<div class="card-body">
+						<p class="card-text">
+							CSS(Cacading Style Sheet)は、HTMLやXMLの要素をどのように修飾（表示）するかを
+							指示する仕様の一つで、文書の構造と体裁を分離させるという理念を実現させるために提唱された
+							スタイルシートの具体的な仕様の一つです。
+						</p>
+						<a href="#" class="btn btn-primary">Demo</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card" style="max-width:25rem;">
+					<img class="card-img-top" src="./images/logo_javascript.png">
+					<div class="card-body">
+						<p class="card-text">
+							JavaScriptはプログラミング言語であり、HTMLやCSSと並ぶ、WWWの中核技術の一つである。
+							利用される場面はフロント/バックエンド、アプリなど、ブラウザからサーバー、デスクトップから
+							スマートフォンまで多岐に渡ります。
+						</p>
+						<a href="#" class="btn btn-primary">Demo</a>
+					</div>
 				</div>
 			</div>
 		</div>
+		<div class="row"><!--jQuery,Bootstrap,Vue.js-->
+			<div class="col-sm-4">
+				<div class="card" style="max-width:25rem;">
+					<img class="card-img-top" src="./images/logo_jquery.png">
+					<div class="card-body">
+						<p class="card-text">
+							jQuery(ジェイクエリー)は、ウェブブラウザ用JavaScriptコードをより容易に記述できるように
+							するために設計されたJavaScriptライブラリです。
+							ジョン・レシグが、2006年1月に開催された"BarCamp NYC"でリリースしました。
+						</p>
+						<a href="#" class="btn btn-primary">Demo</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card" style="max-width:25rem;">
+					<img class="card-img-top" src="./images/logo_bootstrap.png">
+					<div class="card-body">
+						<p class="card-text">
+							Bootstrapはウェブサイトやwebアプリケーションを作成するフロントエンドフレームワークである。
+							タイポグラフィ、フォーム、ボタン、ナビゲーション、その他構成要素や拡張など、HTMLおよびCSSベースのテンプレートとして
+							用意されています。
+						</p>
+						<a href="#" class="btn btn-primary">Demo</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card" style="max-width:25rem;">
+					<img class="card-img-top" src="./images/logo_vue.png">
+					<div class="card-body">
+						<p class="card-text">
+							Vue.jsは、Webアプリケーションにおけるユーザーインターフェイスを構築するための、
+							JavaScriptフレームワークである。他のJavaScriptライブラリを使用するプロジェクトへの導入において、
+							容易になるように設計されています。
 
+						</p>
+						<a href="#" class="btn btn-primary">Demo</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
 	</main>
 	<!-- Main(End) -->
 
 	<!-- Footer(Start) -->
 	<footer>
-		<div class="container text-muted py-5 border-0">
+		<div class="container text-muted py-5">
 			<p class="float-end mb-1"><a href="#">Back to top</a></p>
 			<p class="mb-1">&copy; Bootstrap</p>
 			<p class="mb-0">
