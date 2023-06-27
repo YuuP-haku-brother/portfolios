@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="./images/favicon.ico">
+	<title>ライブチケット</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="./libs/bootstrap/carousel.css">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="./css/custom.css">
+</head>
+<body>
+	
+	<!-- Header(Start) -->
+	<header style="padding-top:50px;">
+		<nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+			<div class="container-fluid">
+				<h2 class="navbar-brand">チケット購入</h2>
+			</div>
+		</nav>
+	</header>
+	<!-- Header(End) -->
+
+	<!-- Main(Start) -->
+	<main>
+		<div class="container">	
+			<div class="card text-center">
+				<div class="card-body">
+					<h4 class="card-title">チケット購入</h4>
+					<p class="card-text">
+						ライブチケット購入はこちらから
+					</p>
+					<a href="#" class="btn btn-info text-light">>今後のライブ予定</a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<h2>入力フォーム</h2>
+			<form>
+					<h6>・お名前<span class="badge rounded-pill bg-danger text-light">必須</span> </h6>
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="姓">
+						<input type="text" class="form-control" placeholder="名">
+					</div>
+					<h6>・フリガナ<span class="badge rounded-pill bg-danger text-light">必須</span> </h6>
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="セイ">
+						<input type="text" class="form-control" placeholder="メイ">
+					</div>
+					<h6>・郵便番号<span class="badge rounded-pill bg-danger text-light">必須</span></h6>
+					<input type="text" class="form-control" placeholder="郵便番号">
+					<h6>・生年月日<span class="badge rounded-pill bg-danger text-light">必須</span></h6>
+						<input type="text" class="form-control" placeholder="記入例)2004-01-04">
+				<div class="mb-3">
+					<h6>・都道府県<span class="badge rounded-pill bg-danger text-light">必須</span></h6>
+					<select class="form-select" aria-label="都道府県">
+						<option selected>選択してください</option>
+						<option>北海道</option>
+						<option>青森県</option>
+						<option>秋田県</option>
+						<option>岩手県</option>
+						<option>山形県</option>
+						<option>宮城県</option>
+						<option>福島県</option>
+						<option>茨城県</option>
+						<option>栃木県</option>
+						<option>群馬県</option>
+						<option>埼玉県</option>
+						<option>千葉県</option>
+						<option>東京都</option>
+						<option>神奈川県</option>
+						<option>新潟県</option>
+						<option>富山県</option>
+						<option>石川県</option>
+						<option>福井県</option>
+						<option>山梨県</option>
+						<option>長野県</option>
+						<option>岐阜県</option>
+						<option>静岡県</option>
+						<option>愛知県</option>
+						<option>三重県</option>
+						<option>滋賀県</option>
+						<option>京都府</option>
+						<option>大阪府</option>
+						<option>兵庫県</option>
+						<option>奈良県</option>
+						<option>和歌山県</option>
+						<option>鳥取県</option>
+						<option>島根県</option>
+						<option>岡山県</option>
+						<option>広島県</option>
+						<option>山口県</option>
+						<option>徳島県</option>
+						<option>香川県</option>
+						<option>愛媛県</option>
+						<option>高知県</option>
+						<option>福岡県</option>
+						<option>佐賀県</option>
+						<option>長崎県</option>
+						<option>熊本県</option>
+						<option>大分県</option>
+						<option>宮崎県</option>
+						<option>鹿児島県</option>
+						<option>沖縄県</option>
+					</select>
+				</div>
+				<h6>・住所<span class="badge rounded-pill bg-danger text-light">必須</span></h6>
+				<input type="text" class="form-control" placeholder="住所">
+				<div class="mb-3">
+					<label class="form-label" for="email">・メールアドレス<span class="badge rounded-pill bg-danger text-light">必須</span></label>
+					<input type="email" class="form-control" id="email" aria-describedby="emailhelp" placeholder="メールアドレスを入力">
+					<small id="emailhelp" class="form-text text-muted">
+						あなたに関する個人情報を収集することはありません
+					</small>
+				</div>
+				<h6>・チケット選択<span class="badge rounded-pill bg-danger text-light">必須</span></h6>
+					<select class="form-select" aria-label="チケット">
+						<option selected>選択してください</option>
+						<option>20XX年xx月xx日 [ライブ名][--:-- ~ --:--]</option>
+						<option>20XX年xx月xx日 [ライブ名][--:-- ~ --:--]</option>
+						<option>20XX年xx月xx日 [ライブ名][--:-- ~ --:--]</option>
+					</select>
+				<button type="submit" class="btn btn-primary">送信</button>
+			</form>	
+		</div>
+	</main>
+	<!-- Main(End) -->
+
+	<!-- Footer(Start) -->
+	<footer>
+		<div class="container text-muted py-5">
+			<p class="float-end mb-1"><a href="#">ページの先頭に戻る</a></p>
+			<p class="mb-1">&copy; ticet</p>
+		</div>
+	</footer>
+	<!-- Footer(End) -->
+
+	<!-- JavaScript -->
+	<script src="./libs/jquery/jquery-3.6.1.min.js"></script>
+	<script src="./libs/bootstrap/bootstrap.min.js"></script>
+	<script src="./main.js"></script>
+</body>
+</html>

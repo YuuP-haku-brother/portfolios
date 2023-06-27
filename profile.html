@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="./images/favicon.ico">
+	<title>プロフィール</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="./libs/bootstrap/carousel.css">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="./css/custom.css">
+</head>
+<body>
+	
+	<!-- Header(Start) -->
+	<header style="padding-top:50px;">
+		<nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+			<div class="container-fluid">
+				<h2 class="navbar-brand">プロフィール</h2>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								メンバー紹介
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenu">
+								<a class="dropdown-item" href="#">名前を入力</a>
+								<a class="dropdown-item" href="#">名前を入力</a>
+								<a class="dropdown-item" href="#">名前を入力</a>
+								<a class="dropdown-item" href="#">名前を入力</a>
+								<a class="dropdown-item" href="#">名前を入力</a>
+								<a class="dropdown-item" href="#">名前を入力</a>
+								<a class="dropdown-item" href="#">名前を入力</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								グループの概要
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenu">
+								<a class="dropdown-item" href="#">グループの歩み</a>
+								<a class="dropdown-item" href="#">グループの活動</a>
+								<a class="dropdown-item" href="#">グループのアルバム</a>
+							</div>
+						</li><li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								ライブ・ファンクラブ
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenu">
+								<a class="dropdown-item" href="#">今後のライブ予定</a>
+								<a class="dropdown-item" href="#">チケット購入</a>
+								<a class="dropdown-item" href="#">ファンクラブ</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- Header(End) -->
+
+	<!-- Main(Start) -->
+    <div class="container">	
+        <div class="card text-center">
+            <div class="card-body">
+                <h4 class="card-title">[名前]のプロフィール</h4>
+                <p class="card-text">
+                    [ここに文章を入力]<br class="d-none d-sm-block">[ここに文章を入力]
+                </p>
+                <a href="#" class="btn btn-info text-light">>[名前]の歩み</a>
+            </div>
+        </div>
+    </div>
+	<div class="container">
+		<div class="row">
+		  <!--<div class="ox">-->
+				<div class="col-md-5 px-4">
+					<div id="myCarousel" class="carousel slide">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<div id="file1"></div><!--画像はcssファイルにて指定-->
+								<div class="container">
+									<div class="carousel-caption text-start">
+									</div>
+								</div>
+							</div>	
+							<div class="carousel-item">
+								<div id="file2"></div><!--画像はcssファイルにて指定-->
+								<div class="container">
+									<div class="carousel-caption text-start">
+									</div>
+								</div>
+							</div>	
+							<div class="carousel-item">
+								<div id="file3"></div><!--画像はcssファイルにて指定-->
+								<div class="container">
+									<div class="carousel-caption text-start">
+									</div>
+								</div>
+							</div>										  
+						</div>
+						<button class="carousel-control-prev carousel-dark" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Prev</span>
+						</button>
+						<button class="carousel-control-next carousel-dark" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>  
+			<div class="col-md-5 px-5">
+			  <div class="card-body">
+				  <h3 class="card-title">[名前]</h3>
+				  <h5 class="card-subtitle">＜プロフィール＞</h5>
+				  <p>＜メンバーの説明＞</p>
+			  </div>
+			</div>
+		  <!--</div>-->
+		</div>
+	  </div>
+    <!-- Main(End) -->
+
+	<!-- Footer(Start) -->
+	<footer>
+		<div class="container text-muted py-5">
+			<p class="float-end mb-1"><a href="#">ページの先頭に戻る</a></p>
+			<p class="mb-1">&copy; profile</p>
+			<p class="mb-0">
+				<a href="#">
+					<!--外部リンクを貼る-->
+
+				</a>
+			</p>
+			<p class="mb-0">
+				画像<a href="https://www.pakutaso.com/" target="_blank">ぱくたそ</a>様より
+			</p>
+		</div>
+	</footer>
+	<!-- Footer(End) -->
+
+	<!-- JavaScript -->
+	<script src="./libs/jquery/jquery-3.6.1.min.js"></script>
+	<script src="./libs/bootstrap/bootstrap.min.js"></script>
+	<script src="./main.js"></script>
+</body>
+</html>
