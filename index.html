@@ -10,6 +10,13 @@
 	<link rel="stylesheet" href="./libs/bootstrap/carousel.css">
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="./css/custom.css">
+	<link rel="stylesheet" href="./main.js">
+	<!--ツールチップ出現用のアニメーションを指定するCSS。※導入方法は後程解説。読み込まなくてもフェードインで出現します。-->
+	<link rel="stylesheet" type="text/css" href="https://unpkg.com/tippy.js@5.0.3/animations/shift-toward-subtle.css">
+	<!--ツールチップの色を指定するCSS。。※導入方法は後程解説。読み込まなくても黒色で出現します。-->
+	<link rel="stylesheet" type="text/css" href="https://unpkg.com/tippy.js@5.0.3/themes/material.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="./css/slide.css">	
 </head>
 <body>
 	
@@ -38,15 +45,34 @@
 								<a class="dropdown-item" href="https://openprocessing.org/sketch/1948141">丸、並べてみた</a>
 								<a class="dropdown-item" href="https://openprocessing.org/sketch/1958454">丸と四角を並べた時計</a>
 								<a class="dropdown-item" href="https://openprocessing.org/sketch/1953637">丸と四角のみで図柄を作りました（閲覧注意）</a>
+								<a class="dropdown-item" href="https://openprocessing.org/sketch/1967032">線と丸の柄</a>
+								<a class="dropdown-item" href="https://openprocessing.org/sketch/1963257">色が変わる丸を並べた(丸の色もカラフルにした)</a>
 							</div>
-						</li><li class="nav-item dropdown">
+						</li>
+						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								詩
+								文字作品ライブラリ[詩]
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenu">
 								<a class="dropdown-item" href="https://www.pixiv.net/novel/show.php?id=19093042">罪愛と名付けられた痛み</a>
 								<a class="dropdown-item" href="https://www.pixiv.net/novel/show.php?id=19200721">雪のような心</a>
 								<a class="dropdown-item" href="https://www.pixiv.net/novel/show.php?id=19765965">勇気・幕開け</a>
+								<a class="dropdown-item" href="https://www.pixiv.net/novel/show.php?id=20254822">一歩・また一歩</a>
+								<a class="dropdown-item" href="https://www.pixiv.net/novel/show.php?id=19146936">機械に芽生えし感情</a>
+								<a class="dropdown-item" href="https://www.pixiv.net/novel/show.php?id=19765965">夜明け</a>
+								<a class="dropdown-item" href="https://www.pixiv.net/novel/show.php?id=20826038">青</a>
+								<a class="dropdown-item" href="https://www.pixiv.net/novel/show.php?id=19207911">方程式</a>
+								<a class="dropdown-item" href="https://www.pixiv.net/novel/show.php?id=19403839">甘い・辛い・？</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								文字作品ライブラリ[二次創作シリーズ]
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenu">
+								<a class="dropdown-item" href="https://www.pixiv.net/novel/series/10347079">光と闇に芽吹く『色』</a>
+								<a class="dropdown-item" href="https://www.pixiv.net/novel/series/10608872">剣と剣・交わり交わし・恋に落ち</a>
+								<a class="dropdown-item" href="https://www.pixiv.net/novel/series/10642249">マスターBOX日記</a>
 							</div>
 						</li>
 					</ul>
@@ -78,7 +104,11 @@
 				<br class="d-none d-sm-block">
 				このポートフォリオサイトでは、今まで私が作ってきたものをまとめております。
 				<br class="d-none d-sm-block">
-				また、githubにて短いコード等を公開しておりますので、そちらもご覧いただけると幸いです。
+				githubにて短いコード等を公開しておりますので、そちらもご覧いただけると幸いです。
+				<br class="d-none d-sm-block">
+				また、pixivにて詩や二次創作の小説などを公開しております。興味がある方は読んでみてください。
+				<br class="d-none d-sm-block">
+				追記:YouTubeのリンクを貼りました、気になる方はぜひ覗いてみてください。
 			</h4>
 		</div>
 		<div class="container border m-5"></div>
@@ -92,14 +122,17 @@
 					<br class="d-none d-sm-block">
 					資格:MOS（Word.Excel）,Webクリエイター
 					<br class="d-none d-sm-block">
-					趣味:小説を書くこと（pixivにて公開）
+					趣味:小説,詩を書くこと（pixivにて公開）
+					<br class="d-none d-sm-block">
+					パズドラをすること<br class="d-none d-sm-block">(YouTubeにて垂れ流し動画を投稿中)
 				</h4>
 			</div>
 			<div class="col-6">
 				<h3>外部リンク</h3>
-				<p>github⇨<a class="btn btn-outline-primary" href="https://gist.github.com/YuuP-haku-brother" role="button">ユーザー名[YuuP-haku-brother]</a></p>
-				<p>pixiv⇨<a class="btn btn-outline-primary" href="https://www.pixiv.net/users/55862857" role="button">ユーザー名[ゆうP（ハクの兄）]</a></p>
-				<p>OpenProcessing⇨<a class="btn btn-outline-primary" href="https://openprocessing.org/user/385686?view=activity&o=6" role="button">ユーザー名[YuuP Haku-Brother]</a></p>
+				<p>github⇨<a class="btn cap btn-outline-primary" href="https://gist.github.com/YuuP-haku-brother" role="button" data-tippy-content="<div class='inner-cap'><p>主にサンプルサイトのコードや</p><p>授業で扱ったコードを載せています。</p></div>">ユーザー名[YuuP-haku-brother]</a></p>
+				<p>pixiv⇨<a class="btn cap btn-outline-primary" href="https://www.pixiv.net/users/55862857" role="button" data-tippy-content="<div class='inner-cap'><p>今まで書いた詩や二次創作を投稿しています。</p><p>後々一次創作も投稿予定です。</p></div>">ユーザー名[ゆうP（ハクの兄）]</a></p>
+				<p>OpenProcessing⇨<a class="btn cap btn-outline-primary" href="https://openprocessing.org/user/385686?view=activity&o=6" role="button" data-tippy-content="<div class='inner-cap'><p>授業で扱ったコードを載せています。</p><p>気長に作っていく予定です。</p></div>">ユーザー名[YuuP Haku-Brother]</a></p>
+				<p>YouTube⇨<a class="btn cap btn-outline-primary" href="https://www.youtube.com/@user-zs4dd2sl4q/videos" role="button" data-tippy-content="<div class='inner-cap'><p>プレイ動画の垂れ流しを投稿しています</p><p>気長に投稿する予定です。</p></div>">ユーザー名[ゆうP]</a></p>
 			</div>	
 		</div>
 	</div>
@@ -161,9 +194,9 @@
 
 	<h1>・OpenProcessingまとめ</h1>
 	<div class="container-fluid p-5 bg-success">
-		<div class="row">
-			<div class="col-sm-4">
-				<div class="card h-100" style="max-width:25rem;">
+		<ul class="slider">
+			<li>
+				<div class="card mb-3" style="max-width:25rem;">
 					<img class="card-img-top" src="./images/OP1.png">
 					<div class="card-body">
 						<h2 class="card-title">
@@ -175,9 +208,9 @@
 						<a href="https://openprocessing.org/sketch/1948141" class="btn btn-primary">サンプル</a>
 					</div>
 				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="card h-100" style="max-width:25rem;">
+			</li>
+			<li>
+				<div class="card mb-3" style="max-width:25rem;">
 					<img class="card-img-top" src="./images/OP2.png">
 					<div class="card-body">
 						<h2 class="card-title">
@@ -189,9 +222,9 @@
 						<a href="https://openprocessing.org/sketch/1958454" class="btn btn-primary">サンプル</a>
 					</div>
 				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="card h-100" style="max-width:25rem;">
+			</li>
+			<li>
+				<div class="card mb-3" style="max-width:25rem;">
 					<img class="card-img-top" src="./images/OP3.png">
 					<div class="card-body">
 						<h2 class="card-title">
@@ -203,21 +236,49 @@
 						<a href="https://openprocessing.org/sketch/1953637" class="btn btn-primary">サンプル</a>
 					</div>
 				</div>
-			</div>
-		</div>
+			</li>
+			<li>
+				<div class="card mb-3" style="max-width:50rem;">
+					<img class="card-img-top" src="./images/OP4.png">
+					<div class="card-body">
+						<h2 class="card-title">
+							線と丸の柄
+						</h2>
+						<p class="card-text">
+							更新するたびに線の配置が変わる柄
+						</p>
+						<a href="https://openprocessing.org/sketch/1967032" class="btn btn-primary">サンプル</a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="card mb-3" style="max-width:50rem;">
+					<img class="card-img-top" src="./images/OP5.png">
+					<div class="card-body">
+						<h2 class="card-title">
+							色が変わる丸を並べた(丸の色もカラフルにした)
+						</h2>
+						<p class="card-text">
+							マーブル模様の丸を並べてみました
+						</p>
+						<a href="https://openprocessing.org/sketch/1963257" class="btn btn-primary">サンプル</a>
+					</div>
+				</div>
+			</li>
+		</ul>
 	</div>
 
-	<h1>・今まで書いてきた詩[趣味]</h1>
+	<h1>・文字作品ライブラリ[詩]</h1>
 	<div class="container-fluid p-5 bg-warning">
-		<div class="row">
-			<div class="col-sm-4">
+		<ul class="slider">
+			<li>
 				<div class="card mb-3" style="max-width:25rem;">
 					<img class="card-img-top" src="./images/罪愛.png">
 					<div class="card-body">
 						<p>
 							<a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseContent01" role="button"
 							 aria-expanded="false" aria-controls="collapseContent01">
-								この小説について
+								この詩について
 							</a>
 						</p>
 						<div class="collapse" id="collapseContent01">
@@ -230,15 +291,15 @@
 						<a href="https://www.pixiv.net/novel/show.php?id=19093042" class="btn btn-primary">読む</a>
 					</div>
 				</div>
-			</div>
-			<div class="col-sm-4">
+			</li>
+			<li>
 				<div class="card mb-3" style="max-width:25rem;">
 					<img class="card-img-top" src="./images/雪.png">
 					<div class="card-body">
 						<p>
 							<a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseContent02" role="button"
 							 aria-expanded="false" aria-controls="collapseContent02">
-								この小説について
+								この詩について
 							</a>
 						</p>
 						<div class="collapse" id="collapseContent02">
@@ -251,10 +312,205 @@
 						<a href="https://www.pixiv.net/novel/show.php?id=19200721" class="btn btn-primary">読む</a>
 					</div>
 				</div>
+			</li>
+			<li><div class="card mb-3" style="max-width:25rem;">
+				<img class="card-img-top" src="./images/勇気.png">
+				<div class="card-body">
+					<p>
+						<a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseContent03" role="button"
+						 aria-expanded="false" aria-controls="collapseContent03">
+							この詩について
+						</a>
+					</p>
+					<div class="collapse" id="collapseContent03">
+						<div class="card card-body">
+							緊張している時に自分の感情を整理するために書いた作品です
+						</div>
+					</div>
+				</div>
+				<div class="card-footer">
+					<a href="https://www.pixiv.net/novel/show.php?id=19765965" class="btn btn-primary">読む</a>
+				</div>
+		</div></li>
+			<li>
+				<div class="card mb-3" style="max-width:25rem;">
+					<img class="card-img-top" src="./images/一歩.png">
+					<div class="card-body">
+						<p>
+							<a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseContent01" role="button"
+							 aria-expanded="false" aria-controls="collapseContent01">
+								この詩について
+							</a>
+						</p>
+						<div class="collapse" id="collapseContent01">
+							<div class="card card-body">
+								「勇気・幕開け」の続きの作品
+							</div>
+						</div>
+					</div>
+					<div class="card-footer">
+						<a href="https://www.pixiv.net/novel/show.php?id=20254822" class="btn btn-primary">読む</a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="card mb-3" style="max-width:25rem;">
+					<img class="card-img-top" src="./images/感情.png">
+					<div class="card-body">
+						<p>
+							<a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseContent02" role="button"
+							 aria-expanded="false" aria-controls="collapseContent02">
+								この詩について
+							</a>
+						</p>
+						<div class="collapse" id="collapseContent02">
+							<div class="card card-body">
+								機械と人間の間に生まれた生命の話
+							</div>
+						</div>
+					</div>
+					<div class="card-footer">
+						<a href="https://www.pixiv.net/novel/show.php?id=19146936" class="btn btn-primary">読む</a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="card mb-3" style="max-width:25rem;">
+				<img class="card-img-top" src="./images/夜明け.png">
+				<div class="card-body">
+					<p>
+						<a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseContent03" role="button"
+						 aria-expanded="false" aria-controls="collapseContent03">
+							この詩について
+						</a>
+					</p>
+					<div class="collapse" id="collapseContent03">
+						<div class="card card-body">
+							夜明けをテーマに描いた二人の話
+						</div>
+					</div>
+				</div>
+				<div class="card-footer">
+					<a href="https://www.pixiv.net/novel/show.php?id=19094744" class="btn btn-primary">読む</a>
+				</div>
+				</div>
+			</li>
+			<li>
+				<div class="card mb-3" style="max-width:25rem;">
+					<img class="card-img-top" src="./images/青.png">
+					<div class="card-body">
+						<p>
+							<a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseContent01" role="button"
+							 aria-expanded="false" aria-controls="collapseContent01">
+								この詩について
+							</a>
+						</p>
+						<div class="collapse" id="collapseContent01">
+							<div class="card card-body">
+								青い世界をイメージして書いた話
+							</div>
+						</div>
+					</div>
+					<div class="card-footer">
+						<a href="https://www.pixiv.net/novel/show.php?id=20826038" class="btn btn-primary">読む</a>
+					</div>
+			</div>
+			</li>
+			<li>
+				<div class="card mb-3" style="max-width:25rem;">
+					<img class="card-img-top" src="./images/方程式.png">
+					<div class="card-body">
+						<p>
+							<a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseContent02" role="button"
+							 aria-expanded="false" aria-controls="collapseContent02">
+								この詩について
+							</a>
+						</p>
+						<div class="collapse" id="collapseContent02">
+							<div class="card card-body">
+								決まりに従って生きることのしんどさや辛さを書いた話
+							</div>
+						</div>
+					</div>
+					<div class="card-footer">
+						<a href="https://www.pixiv.net/novel/show.php?id=19207911" class="btn btn-primary">読む</a>
+					</div>
+			</div>
+			</li>
+			<li>
+				<div class="card mb-3" style="max-width:25rem;">
+					<img class="card-img-top" src="./images/甘辛.png">
+					<div class="card-body">
+						<p>
+							<a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseContent03" role="button"
+							 aria-expanded="false" aria-controls="collapseContent03">
+								この詩について
+							</a>
+						</p>
+						<div class="collapse" id="collapseContent03">
+							<div class="card card-body">
+								柿の種とメルティキッスを食べた時に書いた詩
+							</div>
+						</div>
+					</div>
+					<div class="card-footer">
+						<a href="https://www.pixiv.net/novel/show.php?id=19403839" class="btn btn-primary">読む</a>
+					</div>
+			</div>
+			</li>
+			<!--/slider--></ul>
+
+				
+		</div>
+
+	<h1>・文字作品ライブラリ[二次創作シリーズ]</h1>
+	<div class="container-fluid p-5 bg-danger">
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="card mb-3" style="max-width:25rem;">
+					<img class="card-img-top" src="./images/光闇.png">
+					<div class="card-body">
+						<p>
+							<a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseContent01" role="button"
+							 aria-expanded="false" aria-controls="collapseContent01">
+								この小説について
+							</a>
+						</p>
+						<div class="collapse" id="collapseContent01">
+							<div class="card card-body">
+								初のパズドラ二次創作シリーズ
+							</div>
+						</div>
+					</div>
+					<div class="card-footer">
+						<a href="https://www.pixiv.net/novel/series/10347079" class="btn btn-primary">読む</a>
+					</div>
+				</div>
 			</div>
 			<div class="col-sm-4">
 				<div class="card mb-3" style="max-width:25rem;">
-					<img class="card-img-top" src="./images/勇気.png">
+					<img class="card-img-top" src="./images/剣と剣.png">
+					<div class="card-body">
+						<p>
+							<a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseContent02" role="button"
+							 aria-expanded="false" aria-controls="collapseContent02">
+								この小説について
+							</a>
+						</p>
+						<div class="collapse" id="collapseContent02">
+							<div class="card card-body">
+								パズドラ二次創作シリーズ第二弾
+							</div>
+						</div>
+					</div>
+					<div class="card-footer">
+						<a href="https://www.pixiv.net/novel/series/10608872" class="btn btn-primary">読む</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card mb-3" style="max-width:25rem;">
+					<img class="card-img-top" src="./images/マスター.png">
 					<div class="card-body">
 						<p>
 							<a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseContent03" role="button"
@@ -264,16 +520,17 @@
 						</p>
 						<div class="collapse" id="collapseContent03">
 							<div class="card card-body">
-								緊張している時に自分の感情を整理するために書いた作品です
+								オリ主を交えた二次創作シリーズ
 							</div>
 						</div>
 					</div>
 					<div class="card-footer">
-						<a href="https://www.pixiv.net/novel/show.php?id=19765965" class="btn btn-primary">読む</a>
+						<a href="https://www.pixiv.net/novel/series/10642249" class="btn btn-primary">読む</a>
 					</div>
 			</div>
 		</div>
-	</div>
+		</div>
+		</div>
 	</main>
 	<!-- Main(End) -->
 
@@ -284,6 +541,8 @@
 			<p class="mb-1">&copy; 2023 Yuto's portfolio</p>
 			<p class="mb-0">
 				画像<a href="https://www.pakutaso.com/" target="_blank">ぱくたそ</a>様より
+			<p class="mb-0">
+				コードの引用<a href="https://coco-factory.jp/ugokuweb/" target="_blank">動くwebデザインアイデア帳</a>様より
 			</p>
 		</div>
 	</footer>
@@ -292,6 +551,12 @@
 	<!-- JavaScript -->
 	<script src="./libs/jquery/jquery-3.6.1.min.js"></script>
 	<script src="./libs/bootstrap/bootstrap.min.js"></script>
+	<!--ツールチップを出すためのJS-->
+	<script src="https://unpkg.com/popper.js@1"></script>
+	<script src="https://unpkg.com/tippy.js@5"></script>
+	<!--ツールチップのJSを制御するための自作のJS-->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script src="./main.js"></script>
 </body>
 </html>
