@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI指数計算</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>BMI指数計算</h1>
+    <label for="weight">体重（kg）: </label>
+    <input type="number" id="weight" placeholder="体重を入力" required>
+    
+    <label for="height">身長（cm）: </label>
+    <input type="number" id="height" placeholder="身長を入力" required>
+    
+    <button onclick="calculateBMI()">計算</button>
+    <button onclick="resetInputs()">リセット</button>
+    
+    <div id="topResult"></div>
+    <div id="bottomResult"></div>
+
+    <div class="center-table">
+    <table>
+      <tr>
+        <th>範囲(BMI)</th>
+        <th>肥満度</th>
+      </tr>
+      <tr>
+        <td data-min="0" data-max="18.5">18.5未満</td>
+        <td>低体重(痩せ型)</td>
+      </tr>
+      <tr>
+        <td data-min="18.5" data-max="25">18.5~25未満</td>
+        <td>正常体重</td>
+      </tr>
+      <tr>
+        <td data-min="25" data-max="30">25〜30未満</td>
+        <td>肥満（1度）</td>
+      </tr>
+      <tr>
+        <td data-min="30" data-max="35">30〜35未満</td>
+        <td>肥満（2度）</td>
+      </tr>
+      <tr>
+        <td data-min="35" data-max="40">35〜40未満</td>
+        <td>肥満（3度）</td>
+      </tr>
+      <tr>
+        <td data-min="40" data-max="Infinity">40以上</td>
+        <td>肥満（4度）</td>
+      </tr>
+    </table>
+  </div>
+  <h3>BMI(kg/㎡)＝ 体重(kg) ÷ 身長(m) ÷ 身長(m）</h3>
+  <h3>適正体重(kg)＝ 身長(m) × 身長(m) × 22</h3>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

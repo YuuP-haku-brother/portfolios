@@ -1,0 +1,21 @@
+{
+    "name": "timer-extension",
+    "displayName": "Timer Extension",
+    "version": "1.0.0",
+    "engines": {
+      "vscode": "^1.60.0"
+    },
+    "activationEvents": [
+      "onCommand:extension.timer"
+    ],
+    "main": "./extension.js",
+    "contributes": {
+      "commands": [
+        {
+          "command": "extension.timer",
+          "title": "Start Timer"
+        }
+      ]
+    }
+  }
+  

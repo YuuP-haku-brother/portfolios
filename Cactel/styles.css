@@ -1,0 +1,24 @@
+/* styles.css */
+
+body {
+    background-color: #333; /* 薄い黒 (#333) */
+    color: white; /* 全体の文字色を白に変更 */
+}
+
+h1,h2,h3,h4,h5 {
+    color: white; /* H1タグの文字色を白に変更 */
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px;
+    color: white; /* 表の文字色を白に変更 */
+}
+
+th, td {
+    border: 1px solid #d2b48c;
+    padding: 8px;
+    text-align: center;
+    white-space: nowrap; /* 改行を禁止 */
+}

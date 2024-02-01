@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="timer.css">
+</head>
+<body>
+  <h1>webタイマー</h1>
+  <div id="timer-container">
+    <div id="time-display">00:00:00</div>
+    <div id="input-container">
+      <label for="hours">時間:</label>
+      <input type="number" id="hours" min="0" max="99" value="0">
+      <label for="minutes">分:</label>
+      <input type="number" id="minutes" min="0" max="59" value="0">
+      <label for="seconds">秒:</label>
+      <input type="number" id="seconds" min="0" max="59" value="0">
+    </div>
+    <button id="custom-button" onclick="customTimer()">タイマーを設定</button>
+    <div id="buttons">
+      <button onclick="startTimer()">スタート</button>
+      <button onclick="stopTimer()">ストップ</button>
+      <button onclick="resetTimer()">リセット</button>
+    </div>
+    <div id="preset-buttons-top">
+      <button onclick="setTimer(10)">10秒</button>
+      <button onclick="setTimer(20)">20秒</button>
+      <button onclick="setTimer(30)">30秒</button>
+      <button onclick="setTimer(60)">1分</button>
+      <button onclick="setTimer(90)">1分30秒</button>
+      <button onclick="setTimer(300)">5分</button>
+    </div>
+    <div id="preset-buttons-bottom">
+      <button onclick="setTimer(600)">10分</button>
+      <button onclick="setTimer(1200)">20分</button>
+      <button onclick="setTimer(1800)">30分</button>
+      <button onclick="setTimer(3600)">1時間</button>
+      <button onclick="setTimer(5400)">1時間30分</button>
+      <button onclick="setTimer(7200)">2時間</button>
+    </div>
+  </div>
+  <script src="timer.js"></script>
+</body>
+</html>

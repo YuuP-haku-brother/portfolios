@@ -1,0 +1,59 @@
+h1 {
+  text-align: right;
+}
+
+
+#timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20px;
+  }
+  
+  #time-display {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  #input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+  }
+  
+  #input-container label,
+  #input-container input {
+    margin-right: 10px;
+  }
+  
+  #input-container input {
+    width: 40px; /* 調整可能な幅 */
+  }
+  
+  #buttons,
+  #preset-buttons-top,
+  #preset-buttons-bottom {
+    text-align: right;
+  }
+  
+  #buttons button,
+  #preset-buttons-top button,
+  #preset-buttons-bottom button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 1em;
+  }
+  
+  #buttons button,
+  #preset-buttons-top button,
+  #preset-buttons-bottom button,
+  #custom-button {
+    cursor: pointer;
+  }
+  
+  #custom-button {
+    display: block;
+    margin-top: 10px;
+  }
+  
